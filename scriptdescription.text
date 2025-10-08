@@ -1,5 +1,34 @@
-This project demonstrates the event-driven programming concept using a basic web page constructed with HTML, CSS, and JavaScript. 
-The page allows the user to type text into an input field and click on a submit button, which triggers a JavaScript function that outputs the typed text.
-This interaction demonstrates how the program responds to user input, in this scenario, clicking buttons. In addition, there is also support for dynamically 
-adding new buttons, again demonstrating how several user actions can affect changes on the page. The project demonstrates the most basic principle of event-driven
-programming responding to events like user input to make web applications interactive.
+Script Step 2
+In script-step2.js, the code is waiting for the Submit button to be clicked. When it's clicked,
+it gets the text from the input field and displays it below in the paragraph. This is a basic example of event-driven programming in which the program waits
+for the user to click, then reacts by showing the input.
+Key Idea:
+Nothing happens until the event (button click) occurs — then the handler runs and alters the page.
+
+Script Step 3
+This script builds on the previous one by adding event delegation and dynamic button creation.
+When the "Add New Button" is clicked, it creates a new button and adds it to the page. An event listener on the container captures clicks on any of these
+new buttons and alerts with the button label.
+Key Concepts:
+1. Listens for user input
+2. Dynamically creates new elements
+3. Uses event delegation to listen for events from buttons that did not exist originally
+
+Script Step 4
+This version adds some basic validation to the input handling.
+Now, when the Submit button is clicked, the script checks that the input is not empty. If it is, it shows an error message; otherwise, it shows the input.
+The script also still has the old behavior — generating new buttons and using event delegation to handle their clicks.
+Major Concepts:
+1.Adds input validation
+2. Prevents empty submissions
+3. Maintains event-driven behavior and dynamic updates
+
+Script Step 5
+This script introduces the Observer Pattern.
+As the user types text into the input field, all "observer" buttons on the page update their text dynamically to reflect the current input.
+The submit button still validates input and displays the input text or an error message. This demonstrates how multiple parts of a program can automatically react
+to a change in one place, introducing design pattern to event-driven programming.
+Key Ideas:
+1. Submit input validation
+2. Observer pattern to update buttons dynamically while the user is typing
+3. Shows how events can notify more than one component to react
