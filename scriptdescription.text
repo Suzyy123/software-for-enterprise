@@ -1,0 +1,5 @@
+This project demonstrates the event-driven programming concept using a basic web page constructed with HTML, CSS, and JavaScript. 
+The page allows the user to type text into an input field and click on a submit button, which triggers a JavaScript function that outputs the typed text.
+This interaction demonstrates how the program responds to user input, in this scenario, clicking buttons. In addition, there is also support for dynamically 
+adding new buttons, again demonstrating how several user actions can affect changes on the page. The project demonstrates the most basic principle of event-driven
+programming responding to events like user input to make web applications interactive.
